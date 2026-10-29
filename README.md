@@ -10,6 +10,8 @@ Aplicație Android care afișează trei ceasuri analogice, unul lângă altul, p
 
 Sub fiecare ceas se afișează ora digitală (`HH:mm:ss`), ziua săptămânii și data.
 
+![WatchApp — cele trei ceasuri](docs/screenshot.png)
+
 ## Funcționalități
 
 - Ceasuri analogice desenate de la zero pe `Canvas`, cu limbă pentru secunde actualizată în fiecare secundă
