@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+     <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/bg_romania"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clock_romania"
+            android:textColor="@color/label_romania"
+            android:letterSpacing="0.05"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.example.watchapp.AnalogClockView
+            android:id="@+id/clockRomania"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:face="romania"
+            app:timeZone="Europe/Bucharest" />
+
+        <TextClock
+            android:id="@+id/textRomania"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="HH:mm:ss"
+            android:format24Hour="HH:mm:ss"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/time_background"
+            android:backgroundTint="#002B7F"
+            android:fontFeatureSettings="tnum"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:timeZone="Europe/Bucharest" />
+
+        <com.example.watchapp.ZonedDateTextView
+            android:id="@+id/dayRomania"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:language="ro"
+            app:pattern="EEEE"
+            app:timeZone="Europe/Bucharest" />
+
+        <TextClock
+            android:id="@+id/dateRomania"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="dd.MM.yyyy"
+            android:format24Hour="dd.MM.yyyy"
+            android:fontFeatureSettings="tnum"
+            android:textSize="14sp"
+            android:timeZone="Europe/Bucharest" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/bg_india"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clock_india"
+            android:textColor="@color/label_india"
+            android:letterSpacing="0.05"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.example.watchapp.AnalogClockView
+            android:id="@+id/clockIndia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:face="india"
+            app:timeZone="Asia/Kolkata" />
+
+        <TextClock
+            android:id="@+id/textIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="HH:mm:ss"
+            android:format24Hour="HH:mm:ss"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/time_background"
+            android:backgroundTint="#138808"
+            android:fontFeatureSettings="tnum"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:timeZone="Asia/Kolkata" />
+
+        <com.example.watchapp.ZonedDateTextView
+            android:id="@+id/dayIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:language="hi"
+            app:pattern="EEEE"
+            app:timeZone="Asia/Kolkata" />
+
+        <TextClock
+            android:id="@+id/dateIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="dd/MM/yyyy"
+            android:format24Hour="dd/MM/yyyy"
+            android:fontFeatureSettings="tnum"
+            android:textSize="14sp"
+            android:timeZone="Asia/Kolkata" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/bg_global"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clock_global"
+            android:textColor="@color/label_global"
+            android:letterSpacing="0.05"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.example.watchapp.AnalogClockView
+            android:id="@+id/clockGlobal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:face="globe"
+            app:timeZone="UTC" />
+
+        <TextClock
+            android:id="@+id/textGlobal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="HH:mm:ss"
+            android:format24Hour="HH:mm:ss"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/time_background"
+            android:backgroundTint="#1565C0"
+            android:fontFeatureSettings="tnum"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:timeZone="UTC" />
+
+        <com.example.watchapp.ZonedDateTextView
+            android:id="@+id/dayGlobal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:language="en"
+            app:pattern="EEEE"
+            app:timeZone="UTC" />
+
+        <TextClock
+            android:id="@+id/dateGlobal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="yyyy-MM-dd"
+            android:format24Hour="yyyy-MM-dd"
+            android:fontFeatureSettings="tnum"
+            android:textSize="14sp"
+            android:timeZone="UTC" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnalogClockView">
+        <attr name="timeZone" format="string" />
+        <!-- Ce se deseneaza pe fundalul cadranului -->
+        <attr name="face" format="enum">
+            <enum name="plain" value="0" />
+            <enum name="romania" value="1" />
+            <enum name="india" value="2" />
+            <enum name="globe" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ZonedDateTextView">
+        <!-- timeZone e deja definit mai sus, aici doar il refolosim (fara format) -->
+        <attr name="timeZone" />
+        <!-- Formatul, ex. "EEEE" = numele complet al zilei -->
+        <attr name="pattern" format="string" />
+        <!-- Limba, ca tag BCP 47: "ro", "hi", "en" -->
+        <attr name="language" format="string" />
+    </declare-styleable>
+</resources>

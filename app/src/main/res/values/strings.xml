@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WatchApp</string>
+    <string name="clock_romania">România</string>
+    <string name="clock_india">India</string>
+    <string name="clock_global">Global (UTC)</string>
+</resources>

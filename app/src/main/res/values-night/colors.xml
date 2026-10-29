@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aceleasi nume ca in values/colors.xml, dar mai deschise ca sa se vada pe fundal negru -->
+    <color name="label_romania">#FF7FA6FF</color>
+    <color name="label_india">#FFFF9933</color>
+    <color name="label_global">#FF64B5F6</color>
+
+    <!-- Fundalul sectiunilor: nuante inchise, ca sa nu orbeasca noaptea -->
+    <color name="bg_romania">#FF0F1A33</color>
+    <color name="bg_india">#FF33210D</color>
+    <color name="bg_global">#FF0D2238</color>
+</resources>
